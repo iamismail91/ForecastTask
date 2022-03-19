@@ -20,9 +20,6 @@ class NetworkRequestInterceptor: RequestInterceptor {
     
     func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (Result<URLRequest, Error>) -> Void) {
         let urlRequest = urlRequest
-        /* if let token = TokenManager.shared.fetchAccessToken() {
-         urlRequest.setValue("token \(token)", forHTTPHeaderField: "Authorization")
-         } */
         completion(.success(urlRequest))
     }
     
