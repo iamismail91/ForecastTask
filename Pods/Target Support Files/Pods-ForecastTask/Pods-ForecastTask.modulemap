@@ -1,0 +1,6 @@
+framework module Pods_ForecastTask {
+  umbrella header "Pods-ForecastTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

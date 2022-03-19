@@ -1,0 +1,6 @@
+framework module Pods_ForecastTask_ForecastTaskUITests {
+  umbrella header "Pods-ForecastTask-ForecastTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
