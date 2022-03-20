@@ -67,6 +67,11 @@ class ForecastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+#if targetEnvironment(simulator)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.showAlert(message: "Please run on real iphone device")
+        }
+#endif
         if CLLocationManager.locationServicesEnabled() {
             switch CLLocationManager.authorizationStatus() {
             case .notDetermined:
